@@ -1,0 +1,20 @@
+﻿.Button
+{
+    background-color:#eaeaea;
+    font-size:22px;
+    color:#808080;
+    border:none;
+    cursor:pointer;
+                   
+}
+
+.TextBox
+{
+    padding: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    color: #c6c6c6;
+    background-color: #808080;
+    border: none;
+}

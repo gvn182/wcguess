@@ -1,0 +1,74 @@
+﻿@font-face
+{
+    font-family: Bariol_Regular;
+    src: url('Bariol_Regular/Bariol_Regular.otf');
+}
+@font-face
+{
+    font-family: Lato;
+    src: url('Lato/Lato-Reg.otf');
+}
+
+.trTitulo
+{
+    background-color: #1878a7;
+    height: 30px;
+}
+.trTitulo td
+{
+    font-family: Lato;
+    color: White;
+    font-size: 18px;
+    padding: 0px 10px 0px 10px;
+}
+.trGrupo
+{
+    background-color: #c8c8c8;
+    height: 40px;
+}
+.trGrupo td
+{
+    color: White;
+    font-family: Lato;
+}
+.tbGrupo
+{
+    height:400px;
+    width: 365px;
+    font-family:Lato;
+}
+.trResultado
+{
+    
+    background-color: #f1f1f1;
+}
+.trResultado td
+{
+    border-bottom: 1px solid #c8c8c8;
+    color: Black;
+    font-size:15px;
+}
+.tdPontos
+{
+    border-bottom: 1px solid #c8c8c8;
+    font-family: Bariol_Regular;
+    width: 15px;
+}
+.tdTime
+{
+    border-bottom: 1px solid #c8c8c8;
+    font-family: Bariol_Regular;
+    font-size: 15px;
+}
+.tdX
+{
+    border-bottom: 1px solid #c8c8c8;
+    font-family: Bariol_Regular;
+    font-size: 15px;
+}
+.tdResultado
+{
+    border-bottom: 1px solid #c8c8c8;
+    font-family: Bariol_Regular;
+    font-size:15px;
+}

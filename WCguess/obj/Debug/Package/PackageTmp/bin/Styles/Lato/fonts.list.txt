@@ -1,0 +1,10 @@
+/Library/Fonts/Lato//Lato-Bla.otf
+/Library/Fonts/Lato//Lato-BlaIta.otf
+/Library/Fonts/Lato//Lato-Bol.otf
+/Library/Fonts/Lato//Lato-BolIta.otf
+/Library/Fonts/Lato//Lato-Hai.otf
+/Library/Fonts/Lato//Lato-HaiIta.otf
+/Library/Fonts/Lato//Lato-Lig.otf
+/Library/Fonts/Lato//Lato-LigIta.otf
+/Library/Fonts/Lato//Lato-Reg.otf
+/Library/Fonts/Lato//Lato-RegIta.otf

@@ -1,0 +1,75 @@
+﻿.header-grupo
+{
+    background-color: #1878a7;
+    color: White;
+    height:40px;
+}
+.grupo-tr
+{
+    height: 80px;
+}
+.div-grupo
+{
+    width: 350px;
+    color: White;
+    font-size: 18px;
+    background-color: #c8c8c8;
+}
+.input-grupo
+{
+    height: 48px;
+    width: 48px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color:Black;
+}
+.grupo-td
+{
+    height: 80px;
+    padding:0;
+    border-spacing:0;
+    border-bottom: 1px solid white;
+    
+}
+.grupo-horario
+{
+    color: White;
+}
+.td-X
+{
+    background-image: url('Images/triangulo.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 64px;
+    height: 80px;
+    border-bottom: 1px solid white;
+}
+.span-data
+{
+    font-size:13px;
+    margin-left: 15px;
+    color: White;
+}
+.span-horario
+{
+    font-size:13px;
+    margin-left: 20px;
+    margin-top:15px;
+    color: White;
+}
+.title-guess
+{
+    color: Red;
+    font-size: 90px;
+}
+.subtitle-guess
+{
+    color: White;
+    font-size: 55px;
+}
+.time-table
+{
+    width: 48px;
+    height: 48px;
+}

@@ -1,0 +1,4 @@
+C:\Giovanni\Dropbox\WorldCup\WCguess\BLL\bin\Debug\BLL.dll
+C:\Giovanni\Dropbox\WorldCup\WCguess\BLL\bin\Debug\BLL.pdb
+C:\Giovanni\Dropbox\WorldCup\WCguess\BLL\obj\Debug\BLL.dll
+C:\Giovanni\Dropbox\WorldCup\WCguess\BLL\obj\Debug\BLL.pdb

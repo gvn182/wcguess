@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="VerificaLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerificaLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerificaLoginResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FacebookLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nascimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="facebookID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FacebookLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FacebookLoginResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CadastraLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nascimento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CadastraLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CadastraLoginResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRanks">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllRanksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllRanksResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetRankBy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_Usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRankByResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRankByResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsuarioBy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ID_Usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUsuarioByResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUsuarioByResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetGuess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Guess" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID_Usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetGuessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetGuessResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID_Usuario" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGuessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGuessResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VerificaLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:VerificaLogin" />
+  </wsdl:message>
+  <wsdl:message name="VerificaLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:VerificaLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="FacebookLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:FacebookLogin" />
+  </wsdl:message>
+  <wsdl:message name="FacebookLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:FacebookLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="CadastraLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CadastraLogin" />
+  </wsdl:message>
+  <wsdl:message name="CadastraLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CadastraLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRanksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllRanks" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRanksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllRanksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRankBySoapIn">
+    <wsdl:part name="parameters" element="tns:GetRankBy" />
+  </wsdl:message>
+  <wsdl:message name="GetRankBySoapOut">
+    <wsdl:part name="parameters" element="tns:GetRankByResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUsuarioBySoapIn">
+    <wsdl:part name="parameters" element="tns:GetUsuarioBy" />
+  </wsdl:message>
+  <wsdl:message name="GetUsuarioBySoapOut">
+    <wsdl:part name="parameters" element="tns:GetUsuarioByResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetGuessSoapIn">
+    <wsdl:part name="parameters" element="tns:SetGuess" />
+  </wsdl:message>
+  <wsdl:message name="SetGuessSoapOut">
+    <wsdl:part name="parameters" element="tns:SetGuessResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGuessSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGuess" />
+  </wsdl:message>
+  <wsdl:message name="GetGuessSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGuessResponse" />
+  </wsdl:message>
+  <wsdl:portType name="HelloGustaSoap">
+    <wsdl:operation name="VerificaLogin">
+      <wsdl:input message="tns:VerificaLoginSoapIn" />
+      <wsdl:output message="tns:VerificaLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FacebookLogin">
+      <wsdl:input message="tns:FacebookLoginSoapIn" />
+      <wsdl:output message="tns:FacebookLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CadastraLogin">
+      <wsdl:input message="tns:CadastraLoginSoapIn" />
+      <wsdl:output message="tns:CadastraLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRanks">
+      <wsdl:input message="tns:GetAllRanksSoapIn" />
+      <wsdl:output message="tns:GetAllRanksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRankBy">
+      <wsdl:input message="tns:GetRankBySoapIn" />
+      <wsdl:output message="tns:GetRankBySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarioBy">
+      <wsdl:input message="tns:GetUsuarioBySoapIn" />
+      <wsdl:output message="tns:GetUsuarioBySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGuess">
+      <wsdl:input message="tns:SetGuessSoapIn" />
+      <wsdl:output message="tns:SetGuessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGuess">
+      <wsdl:input message="tns:GetGuessSoapIn" />
+      <wsdl:output message="tns:GetGuessSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloGustaSoap" type="tns:HelloGustaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerificaLogin">
+      <soap:operation soapAction="http://tempuri.org/VerificaLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FacebookLogin">
+      <soap:operation soapAction="http://tempuri.org/FacebookLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastraLogin">
+      <soap:operation soapAction="http://tempuri.org/CadastraLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRanks">
+      <soap:operation soapAction="http://tempuri.org/GetAllRanks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankBy">
+      <soap:operation soapAction="http://tempuri.org/GetRankBy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarioBy">
+      <soap:operation soapAction="http://tempuri.org/GetUsuarioBy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGuess">
+      <soap:operation soapAction="http://tempuri.org/SetGuess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuess">
+      <soap:operation soapAction="http://tempuri.org/GetGuess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="HelloGustaSoap12" type="tns:HelloGustaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerificaLogin">
+      <soap12:operation soapAction="http://tempuri.org/VerificaLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FacebookLogin">
+      <soap12:operation soapAction="http://tempuri.org/FacebookLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastraLogin">
+      <soap12:operation soapAction="http://tempuri.org/CadastraLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRanks">
+      <soap12:operation soapAction="http://tempuri.org/GetAllRanks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRankBy">
+      <soap12:operation soapAction="http://tempuri.org/GetRankBy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsuarioBy">
+      <soap12:operation soapAction="http://tempuri.org/GetUsuarioBy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGuess">
+      <soap12:operation soapAction="http://tempuri.org/SetGuess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGuess">
+      <soap12:operation soapAction="http://tempuri.org/GetGuess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloGusta">
+    <wsdl:port name="HelloGustaSoap" binding="tns:HelloGustaSoap">
+      <soap:address location="http://localhost:60494/HelloGusta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="HelloGustaSoap12" binding="tns:HelloGustaSoap12">
+      <soap12:address location="http://localhost:60494/HelloGusta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

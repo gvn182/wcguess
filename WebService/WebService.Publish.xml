@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="ftp://ftp.wcguess.com/Web/" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="WC" publishMethod="FTP" replaceMatchingFiles="True" userName="site1390422694" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZwctRMUVF0qXAQFoXLdwfQAAAAACAAAAAAAQZgAAAAEAACAAAADrTODzLAfqxpcZoxDvaU7Q+f3WRjMj2tePsK3XUJdTOgAAAAAOgAAAAAIAACAAAACir8pWbjn+o85nZsD9nU1ImrUjeGUt8/iU1EYiCVJzByAAAADdtyc8qmfJS5naadUf+su+uWMVZeybGXgKD3b6BdEA9EAAAABpk3HEfWQl1LyqXLObCvsT/euq4eVvG4vASVl+yF/Jj/3j+kE0wKM7jNX19IPBivdRXo2OJEBUVtfOsTmjF38X" SelectedForPublish="True">
+    <file relUrl="bin/WebService.dll" publishTime="02/27/2014 23:51:58" />
+    <file relUrl="bin/zh-CN/Npgsql.resources.dll" publishTime="12/21/2013 18:09:08" />
+    <file relUrl="bin/DAO.pdb" publishTime="02/27/2014 23:20:16" />
+    <file relUrl="bin/fr/Npgsql.resources.dll" publishTime="12/21/2013 18:09:07" />
+    <file relUrl="bin/DAO.dll" publishTime="02/27/2014 23:20:16" />
+    <file relUrl="bin/fi/Npgsql.resources.dll" publishTime="12/21/2013 18:09:08" />
+    <file relUrl="bin/Mono.Security.dll" publishTime="12/21/2013 17:35:38" />
+    <file relUrl="bin/Npgsql.dll" publishTime="12/21/2013 18:09:07" />
+    <file relUrl="bin/ja/Npgsql.resources.dll" publishTime="12/21/2013 18:09:08" />
+    <file relUrl="bin/WebService.pdb" publishTime="02/27/2014 23:51:58" />
+    <file relUrl="bin/Npgsql.pdb" publishTime="12/21/2013 18:09:07" />
+    <file relUrl="bin/BLL.dll" publishTime="02/27/2014 23:20:17" />
+    <file relUrl="HelloGusta.asmx" publishTime="01/23/2014 10:04:34" />
+    <file relUrl="bin/BLL.pdb" publishTime="02/27/2014 23:20:17" />
+    <file relUrl="bin/de/Npgsql.resources.dll" publishTime="12/21/2013 18:09:07" />
+    <file relUrl="bin/es/Npgsql.resources.dll" publishTime="12/21/2013 18:09:07" />
+    <file relUrl="bin/Npgsql.xml" publishTime="12/21/2013 18:09:07" />
+  </publishProfile>
+</publishData>

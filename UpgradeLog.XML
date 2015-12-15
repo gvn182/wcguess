@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WCguess">
+</Property><Property Name="Solution File" Value="C:\Users\GiovanniGomes\Dropbox\WorldCup\WorldCup\WCguess\WCguess.sln">
+</Property><Property Name="Date" Value="Saturday, February 8, 2014">
+</Property><Property Name="Time" Value="11:37 AM">
+</Property></Properties><Event ErrorLevel="0" Project="WCguess" Source="WCguess\WCguess.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WCguess" Source="WCguess\WCguess.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BLO" Source="BLL\BLO.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="BLO" Source="BLL\BLO.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="DAO" Source="DAO\DAO.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="DAO" Source="DAO\DAO.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="WebService" Source="WebService\WebService.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebService" Source="WebService\WebService.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RankProcessor" Source="RankProcessor\RankProcessor.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="RankProcessor" Source="RankProcessor\RankProcessor.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="WCguess.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="WCguess.sln" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="WCguess" Source="WCguess\WCguess.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WebService" Source="WebService\WebService.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

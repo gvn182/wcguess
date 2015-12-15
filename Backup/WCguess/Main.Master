@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WCguess.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="Scripts/jquery-1.8.3.js" type="text/javascript"></script>
+    <link href="Styles/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="_ss-social-circle.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/font-awesome.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/bootstrap.js" type="text/javascript"></script>
+
+     <script language="javascript" type="text/javascript">
+         $(document).ready(function () {
+             var n = location.pathname.substring(1);
+             switch (n) {
+                 case "Default.aspx":
+                     $('#Sobre').addClass("active"); break;
+
+                 case "Guess.aspx":
+                     $('#Guess').addClass("active"); break;
+
+                 case "Rank.aspx":
+                     $('#Rank').addClass("active"); break;
+
+                 case "asd":
+                     $('#Premiacao').addClass("active"); break;
+
+                 case "brasd":
+                     $('#MeusGrupos').addClass("active"); break;
+                     
+             }
+
+         });
+
+        
+
+
+
+    </script>
+
+    
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div class="navbar navbar-notice navbar-static-top hide">
+      <div class="container text-left">
+        <span>desenvolvido por simple</span>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+          </button> <a class="navbar-brand" href="index.html">Brand</a>
+
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li id="Sobre"> <a href="#">Sobre</a> </li>
+            <li id="Guess"> <a href="Guess.aspx">Guess</a> </li>
+            <li id="Rank"> <a href="Rank.aspx">Ranking</a> </li>
+            <li id="Premiacao"> <a href="#">Premiação</a> </li>
+            <li id="MeusGrupos"> <a href="#">Meus Grupos</a> </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a data-toggle="dropdown" class="navbar-profile" href="#"> 
+                <asp:Image ID="imgPerfil" CssClass="img-circle" Width="40" Height="40" runat="server" /> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li> <a href="perfil.html">Perfil</a> </li>
+                <li> <a href="#">Sair</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+     <div class="container" >
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+         <footer id="footer">
+      <div class="container">
+        <nav role="navigation">
+          <ul class="h_list pull-left">
+            <li> <a href="/about" class="about_flink">Sobre</a>
+
+            </li>
+            <li> <a href="/contest_rules" class="contest_rules_flink">Regras</a>
+
+            </li>
+            <li> <a href="/terms" class="terms_flink">Termos</a>
+
+            </li>
+            <li> <a href="/privacy" class="privacy_flink">Privacidade</a>
+
+            </li>
+            <li> <a href="/faq" class="faq_flink">FAQ</a>
+
+            </li>
+            <li> <a href="mailto:hi@juke.ly?subject=Hi%20Jukely!" class="contact_flink">Contato</a>
+
+            </li>
+          </ul>
+        </nav>
+        <nav role="navigation">
+          <ul class="h_list social pull-right">
+            <!-- <li>Follow us on:</li> -->
+            <li class="icon"> <a href="//twitter.com/jukely" class="ss-icon ss-social ss-social-circle twitter_flink">Twitter</a></li>
+            
+            <li class="icon"> <a href="//facebook.com/jukelyapp" class="ss-icon ss-social ss-social-circle facebook_flink">Facebook</a> </li>
+            
+            <li class="icon"> <a href="//open.spotify.com/user/jukely" class="ss-icon ss-social ss-social-circle spotify_flink">Spotify</a> </li>
+
+            <li class="icon"> <a href="//www.youtube.com/user/jukelytv" class="ss-icon ss-social ss-social-circle youtube_flink">Youtube</a> </li>
+
+            <li class="icon"> <a href="//blog.jukely.com" class="ss-icon ss-social ss-social-circle tumblr_flink">Tumblr</a> </li>
+
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    </div>
+    </form>
+</body>
+</html>

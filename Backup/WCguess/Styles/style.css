@@ -1,0 +1,113 @@
+
+.container-space { padding-top: 40px; }
+
+nav[role="navigation"] li { float: left; font-size: 14px; }
+nav[role="navigation"] li a { float: left; padding: 0 10px; text-decoration: none; color: #999; border-radius: 4px; }
+nav[role="navigation"] li a:hover, nav[role="navigation"] li a:focus { color: #333; }
+nav[role="navigation"] li a:active { color: #666; }
+nav[role="navigation"] li.active a { font-weight: bold; color: #333; }
+
+.navbar-profile { padding:5px !important; }
+.navbar-profile img { border: 1px solid #fff; width:40px; height:40px; }
+
+.navbar-notice { background-color: rgb(255, 255, 76); min-height: 20px !important; margin: 0; }
+
+.page-title { font-family: "Proxima Nova", Helvetica, sans-serif; font-size: 130px; font-weight: bolder; color: red; }
+.page-subtitle { font-family: "Proxima Nova", Helvetica, sans-serif; font-weight: bolder; color: white; font-size: 55px; margin-top: -20px; }
+
+.bandeira { border-radius: 100%; width:52px;height:52px;z-index: 100; }
+.bandeira span { display: inline-block; background-color: rgba(0,0,0,0.5); position:relative; width:52px;height:52px; z-index: 99; position:absolute;border-radius: 100%; border: 2px solid #ffffff; color:#fff; text-align: center; vertical-align: middle; padding:11px 0; }
+
+.profile-img { border-radius: 100%; width:52px;height:52px;z-index: 1000; position:relative }
+.profile-img span { display: inline-block; position:relative; width:52px;height:52px; z-index: 99; position:absolute;border-radius: 100%; border: 2px solid #ffffff; color:#fff; text-align: center; vertical-align: middle; padding:11px 0; }
+.profile-img img { width:52px; height: 52px; border-radius: 100%; }
+
+.vertical-align { position:relative; top:50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); }
+
+
+
+
+.profile-panel { margin-top: 60px; }
+.profile-panel h2 { margin-top: -40px; }
+.profile-panel p { font-size: 18px; }
+.profile-panel, .social-sharing { margin-bottom: 10px; background-color: rgba(130,130,130,0.3); color:#FFF; padding:10px; }
+.profile-panel img { border: 6px solid #FFF; border-radius: 100%; top: -70px; position: relative; }
+.social-sharing { display: inline-block; width: 100%; }
+.social-sharing ul { margin: 0 auto; display: inline-block; }
+.social-sharing ul li { display: inline-block; list-style-image:none; list-style-type:none; margin:0; display:inline-block; float:left; }
+.social-sharing ul li a { color: #fff; font-size: 24px; margin-right: 44px; }
+
+.top-ranking-header { margin-left: 50px; margin-bottom: 20px; color:#fff; }
+.top-ranking-header h4 { font-weight: 200; margin: 0; padding: 0; }
+.top-ranking-header hr { margin: 8px 0; padding: 0; }
+.top-ranking-header .pull-right { right: 13px; display: block; position: relative; }
+
+.top-ranking { padding-left: 33px; padding-right: 10px; margin-left: 50px; color:#fff; }
+.top-ranking ul { padding: 0; color:#000; }
+.top-ranking ul li { margin-bottom: 25px; display:inline-block; list-style-image:none; list-style-type:none; font-size: 20px; }
+.top-ranking ul li span, .top-ranking li div { display:inline-block; }
+.top-ranking ul li img { z-index: 10; position: relative; border: 4px solid #FFF; }
+.top-ranking .top-ranking-name { z-index: 5; background-color: rgba(255,255,255,1); padding: 5px 10px 5px 30px; margin-left: -25px; color:Black; display:inline-block; width:250px; }
+.top-ranking .top-ranking-points { background-color: rgba(255,255,255,1); margin-left: 4px; padding: 5px 10px; color:Black; width:50px;  display:inline-block;}
+.rank { color:#fff; font-size: 30px; width:40px; }
+.rank-user { margin-left: 0px; width:450px; }
+/*.rank-user { margin-left: -30px; }*/
+
+
+
+
+
+/* FOOTER */
+footer { margin-top: 60px; }
+
+#footer { font-size:0.875rem; line-height:2.75rem; padding:2rem 0 6rem; overflow:hidden; *zoom:1; font-family:'Avenir LT W01 65 Medium', Avenir-Medium, HelveticaNeue-Medium, HelveticaNeue, 'Helvetica Neue', Arial, sans-serif; font-weight:500; }
+#footer a, #footer a:link, #footer a:visited { text-decoration:none; display:block; padding:0; color:#fff; opacity:0.7; }
+/*color:#808080;color:#333;*/
+#footer a:hover, #footer a:active { opacity:1; }
+
+#footer .h_list {display:inline;float:left;margin:0;margin-left:-0.5rem;}
+#footer .icon a {display:-moz-inline-stack;display:inline-block;vertical-align:middle;*vertical-align:auto;zoom:1;*display:inline;color:#fff;opacity:0.7;padding:0;font-size:20px;}
+/*color:#bfbfbf;*/
+#footer .icon a:hover, #footer .icon a:focus { opacity: 1; text-decoration: none; }
+
+#footer .social { display:inline; float:right; margin:0; color:#bfbfbf;}
+#footer .social li { margin:0 5px; }
+#footer .social li:first-child{ margin-right:8px; }
+
+.h_list { list-style:none; padding:0; margin:0; }
+.h_list li { list-style-image:none; list-style-type:none; margin:0; display:inline-block; float:left; margin:0 10px;float:none; }
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
